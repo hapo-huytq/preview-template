@@ -1,0 +1,75 @@
+.progress-bar {
+    background: #fff;
+    border-radius: 3px;
+    width: 100%;
+    height: 7px;
+    position: relative;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -25px;
+}
+
+.progress-bar span::after {
+    content:"%";
+}
+
+.progress-bar:after {
+    -webkit-animation: widthload 2s;
+    animation: widthload 2s;
+}
+
+.progress-bar.progress-65:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    border-radius: 3px;
+    background: #f64d70;
+}
+
+.progress-bar.progress-65 span {
+    left: calc(65% - 14px);
+}
+
+.progress-bar.progress-75:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    border-radius: 3px;
+    background: #f64d70;
+}
+
+.progress-bar.progress-75 span {
+    left: calc(75% - 14px);
+}
+
+.progress-bar.progress-50:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 3px;
+    background: #f64d70;
+}
+
+.progress-bar.progress-50 span {
+    left: calc(50% - 14px);
+}
+
+@-webkit-keyframes widthload {
+    0% {
+      opacity: 0;
+      width: 0; }
+    100% {
+      opacity: 1;
+    } 
+}
