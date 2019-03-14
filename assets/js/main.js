@@ -11,5 +11,29 @@
                 },
             }
         });
+
+        $(".portfolio-images").masonry({
+            // options
+            itemSelector: ".portfolio-images__item",
+        });
+
+        /* Caculating distance of carousel nav button */
+            var carouselWidth = $(".references-carousel").outerWidth();
+            setPosition(carouselWidth);
+            $(window).resize(function () {
+                var carouselWidth = $(".references-carousel").outerWidth();
+                setPosition(carouselWidth);
+            });
     });
 })(jQuery);
+
+function setPosition(width) {
+    if($(window).width() <= 860) {
+        var range = (width / 2 - 110);
+        $(".owl-nav button.owl-prev").css("left", range + "px");
+        $(".owl-nav button.owl-next").css("right", range + "px");
+    } else {
+        $(".owl-nav button.owl-prev").css("left", "");
+        $(".owl-nav button.owl-next").css("right", "");
+    }
+}
