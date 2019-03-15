@@ -1,5 +1,7 @@
 /* Responsive */
+
     /* Container */
+
     @media(max-width:1399px) {
         .my-container-fluid {
             max-width: 100%;
@@ -49,6 +51,12 @@
         }
     }
 
+    @media(min-width:1200px) {
+        .portfolio-images {
+            min-height: 600px;
+        }
+    }
+
     @media(max-width:991px) {
         /* Summary Profile */
         .info-profile__personal-info {
@@ -62,6 +70,7 @@
         .summary-info .title-under-line::after {
             width: 170px;
         }
+
         /* Skills */
         .skill-wrapper .col-2,
         .work-education-wrapper .col-2 {
@@ -131,7 +140,6 @@
 
     @media(max-width:767px) {
         /* Summary Profile */
-
         .info-wrapper .col-2 {
             width: 100%;
         }
@@ -182,7 +190,6 @@
         }
 
         /* Portfolio*/
-
         .portfolio-images__item {
             width: 33.33%;
         }
@@ -212,7 +219,6 @@
         }
 
         /* Summary Info */
-
         .info-avatar {
             max-height: 175px;
         }
@@ -260,7 +266,6 @@
         }
 
         /* Professional Summary */
-
         .profession-summary-title {
             margin-bottom: 5px;
         }
@@ -275,7 +280,6 @@
         }
 
         /* Skill */
-
         .progress-circle-wrapper {
             width: 50%;
             margin-bottom: 20px;
@@ -307,7 +311,6 @@
         }
 
         /* Education & Experience */
-
         .work-education-wrapper {
             padding: 35px 0;
         }
@@ -334,7 +337,6 @@
         }
 
         /* Portfolio */
-
         .portfolio-tags-list {
             padding: 0;
             margin-bottom: 10px;
@@ -349,7 +351,6 @@
         }
 
         /* References */
-
         .references-wrapper {
             padding: 35px 0;
         }
