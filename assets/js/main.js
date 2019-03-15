@@ -1,10 +1,4 @@
 (function ($) {
-    
-    $(".portfolio-images").masonry({
-        // options
-        itemSelector: ".portfolio-images__item",
-    });
-
     $(document).ready(function () {
         var owl = $('.references-carousel__list');
         owl.owlCarousel({
@@ -16,6 +10,11 @@
                     items: 1
                 },
             }
+        });
+
+        $(".portfolio-images").masonry({
+            // options
+            itemSelector: ".portfolio-images__item",
         });
 
         /* Caculating distance of carousel nav button */
