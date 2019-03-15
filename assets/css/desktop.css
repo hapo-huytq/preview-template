@@ -140,7 +140,7 @@
 /* Sumary Profile */
     .summary-info {
         position: absolute;
-        bottom: 100px;
+        bottom: 85px;
         left: 0;
         width: 100%;
         display: flex;
@@ -443,7 +443,7 @@
     .work-education-case__box__item__title {
         position: relative;
         font-weight: 600;
-        margin-bottom: 7px;
+        margin-bottom: 4px;
         text-transform: uppercase;
     }
 
