@@ -51,12 +51,6 @@
         }
     }
 
-    @media(min-width:1200px) {
-        .portfolio-images {
-            min-height: 600px !important;
-        }
-    }
-
     @media(max-width:991px) {
         /* Summary Profile */
         .info-profile__personal-info {
