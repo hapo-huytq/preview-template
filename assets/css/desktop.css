@@ -456,6 +456,7 @@ a {
     font-weight: 600;
     margin-bottom: 4px;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .work-education-case__box__item__title:after {
