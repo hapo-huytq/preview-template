@@ -1,353 +1,396 @@
-/* Responsive */
+/* -- Responsive -- */
+/* Container */
+@media(max-width:1399px) {
+    .my-container-fluid {
+        max-width: 100%;
+    }
+}
 
-    /* Container */
+@media(max-width:1199px) {
+    .my-container {
+        max-width: 960px;
+    }
+}
 
-    @media(max-width:1399px) {
-        .my-container-fluid {
-            max-width: 100%;
-        }
+@media(max-width:991px) {
+    .my-container {
+        max-width: 750px;
+    }
+}
+
+@media(max-width:767px) {
+    .my-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width:1399px)  {
+    .my-container-fluid {
+        width: 100%;
+    }
+}
+
+/* -- Section -- */
+@media (max-width:1300px) {
+    /* Summary Profile */
+    .info-profile__small-avatar {
+        width: 140px;
+        height: 140px;
     }
 
-    @media(max-width:1199px) {
-        .my-container {
-            max-width: 960px;
-        }
+    .info-profile__small-avatar .avatar-update {
+        width: 140px;
+    }
+    
+    .info-avatar img {
+        max-width: unset;
+    }
+}
+
+@media(max-width:991px) {
+    /* Summary Profile */
+    .info-profile__personal-info {
+        padding: 0 50px;
     }
 
-    @media(max-width:991px) {
-        .my-container {
-            max-width: 750px;
-        }
+    .summary-info h2 {
+        font-size: 30px;
     }
 
-    @media(max-width:767px) {
-        .my-container {
-            max-width: 100%;
-            padding: 0 15px;
-        }
+    .summary-info .title-under-line::after {
+        width: 170px;
     }
 
-    @media (max-width:1399px)  {
-        .my-container-fluid {
-            width: 100%;
-        }
+    /* Skills */
+    .skill-wrapper .col-2,
+    .work-education-wrapper .col-2 {
+        width: 100%;
     }
 
-    /* Section */
-
-    @media (max-width:1300px) {
-        /* Summary Profile */
-        .info-profile__small-avatar {
-            width: 140px;
-            height: 140px;
-        }
-
-        .info-profile__small-avatar .avatar-update {
-            width: 140px;
-        }
-        
-        .info-avatar img {
-            max-width: unset;
-        }
+    .skill-wrapper .my-row,
+    .work-education-wrapper .my-row {
+        flex-wrap: wrap;
     }
 
-    @media(max-width:991px) {
-        /* Summary Profile */
-        .info-profile__personal-info {
-            padding: 0 50px;
-        }
-
-        .summary-info h2 {
-            font-size: 30px;
-        }
-
-        .summary-info .title-under-line::after {
-            width: 170px;
-        }
-
-        /* Skills */
-        .skill-wrapper .col-2,
-        .work-education-wrapper .col-2 {
-            width: 100%;
-        }
-
-        .skill-wrapper .my-row,
-        .work-education-wrapper .my-row {
-            flex-wrap: wrap;
-        }
-
-        .skill-personal-wrapper {
-            margin-top: 35px;
-        }
-
-        /* Education & Experience */
-        .work-experience-wrapper:last-child {
-            margin-top: 30px;
-        }
-
-        /* portfolio */
-        .portfolio-images__item--button-add {
-            height: 128px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Reference */
-        .references-carousel {
-            padding: 0;
-        }
+    .skill-personal-wrapper {
+        margin-top: 35px;
     }
 
-    @media(max-width:860px) {
-        /* References */
-        .references-carousel__list__item {
-            display: block;
-            text-align: center;
-        }
-
-        .references-carousel__list__item__people-avatar {
-            display: inline-block;
-        }
-
-        .references-carousel .owl-stage-outer {
-            padding-bottom: 15px;
-        }
-
-        .references-carousel__list__item__text {
-            width: 100%;
-        }
-
-        .owl-theme .owl-nav {
-            top: 70px;
-        }
-
-        .references-carousel__list__item__text i.first {
-            left: -15px;
-        }
-
-        .references-carousel__list__item__text span {
-            padding-left: 35px;
-            padding-right: 35px;
-        }
+    /* Education & Experience */
+    .work-experience-wrapper:last-child {
+        margin-top: 35px;
     }
 
-    @media(max-width:767px) {
-        /* Summary Profile */
-        .info-wrapper .col-2 {
-            width: 100%;
-        }
-
-        .info-avatar img{
-            width: 100%;
-        }
-
-        .info-avatar {
-            max-height: 280px;
-        }
-
-        .summary-info {
-            bottom: auto;
-            top: 100px;
-        }
-
-        .summary-info h2 {
-            font-size: 20px;
-        }
-
-        .summary-info .title-under-line::after {
-            width: 100px;
-        }
-
-        .summary-position {
-            font-size: 16px;
-        }
-
-        .info-wrapper {
-            position: relative;
-        }
-
-        .info-profile__languages {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 5px 0;
-        }
-
-        .info-profile__small-avatar {
-            margin-top: -75px;
-        }
-
-        .info-profile.col-2 {
-            position: static;
-            padding-bottom: 35px;
-        }
-
-        /* Portfolio*/
-        .portfolio-images__item {
-            width: 33.33%;
-        }
-
-        .portfolio-images__item--button-add {
-            height: 168px;
-        }
+    /* portfolio */
+    .portfolio-images__item--button-add {
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    @media(max-width:480px) {
-        .portfolio-images__item--button-add {
-            height: 100px;
-        }
+    /* Reference */
+    .references-carousel {
+        padding: 0;
+    }
+}
+
+@media(max-width:860px) {
+    /* References */
+    .references-carousel__list__item {
+        display: block;
+        text-align: center;
     }
 
-    @media(max-width:400px) {
-        h3 {
-            font-size: 16px;
-        }
-
-        .title-top-line::before {
-            width: 50px;
-        }
-
-        .title-under-line::after {
-            width: 127px;
-        }
-
-        /* Summary Info */
-        .info-avatar {
-            max-height: 175px;
-        }
-
-        .summary-info {
-            top: 57px;
-        }
-        
-        .summary-info h2 {
-            font-size: 16px;
-        }
-
-        .summary-position {
-            font-size: 14px;
-        }
-        
-
-        .info-profile__small-avatar {
-            margin-top: -50px;
-            width: 100px;
-            height: 100px;
-        }
-
-        .info-avatar .avatar-update i {
-            top: 23px;
-            left: 25px;
-            font-size: 12px;
-        }
-
-        .info-profile__small-avatar .avatar-update {
-            width: 100px;
-            font-size: 10px;
-            line-height: 23px;
-        }
-
-        .info-avatar .avatar-update {
-            width: 110px;
-            height: 110px;
-            bottom: -65px;
-            right: -65px;
-        }
-
-        .info-profile__personal-info {
-            padding: 0 15px;
-        }
-
-        /* Professional Summary */
-        .profession-summary-title {
-            margin-bottom: 5px;
-        }
-
-        .profession-summary-button-edit {
-            text-align: center;
-            padding-right: 0;
-        }
-
-        .profession-summary-wrapper {
-            padding: 35px 0;
-        }
-
-        /* Skill */
-        .progress-circle-wrapper {
-            width: 50%;
-            margin-bottom: 20px;
-        }
-
-        .skill-progress-circle__button-add {
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-        .skill-progress-circle__button-add .btn {
-            margin-bottom: 0;
-        }
-
-        .skill-personal-wrapper .title-under-line::after {
-            width: 89px;
-        }
-
-        .skill-progress-bar {
-            padding: 0;
-        }
-
-        .skill-wrapper {
-            padding: 35px 0;
-        }
-
-        .skill-progress-bar__button-add {
-            text-align: center;
-        }
-
-        /* Education & Experience */
-        .work-education-wrapper {
-            padding: 35px 0;
-        }
-
-        .work-education-case {
-            padding: 0 0 0 10px;
-            margin-top: 10px;
-        }
-
-        .work-education-case__box {
-            padding-left: 30px;
-        }
-
-        .work-education-case__box__item::after {
-            left: -31px;
-        }
-        .work-education-case__box__item::before {
-            width: 30px;
-            left: -30px;
-        }
-
-        .work-education-case__button-add {
-            text-align: center;
-        }
-
-        /* Portfolio */
-        .portfolio-tags-list {
-            padding: 0;
-            margin-bottom: 10px;
-            margin-top: 0;
-        }
-        .portfolio-images__item {
-            width: 50%;
-        }
-
-        .portfolio-images__item--button-add {
-            height: 120px;
-        }
-
-        /* References */
-        .references-wrapper {
-            padding: 35px 0;
-        }
-        
+    .references-carousel__list__item__people-avatar {
+        display: inline-block;
     }
+
+    .references-carousel .owl-stage-outer {
+        padding-bottom: 15px;
+    }
+
+    .references-carousel__list__item__text {
+        width: 100%;
+    }
+
+    .owl-theme .owl-nav {
+        top: 70px;
+    }
+
+    .references-carousel__list__item__text i.first {
+        left: -15px;
+    }
+
+    .references-carousel__list__item__text span {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media(max-width:767px) {
+    /* Summary Profile */
+    .info-wrapper .col-2 {
+        width: 100%;
+    }
+
+    .info-avatar img{
+        width: 100%;
+    }
+
+    .info-avatar {
+        max-height: 280px;
+    }
+
+    .summary-info {
+        bottom: auto;
+        top: 100px;
+    }
+
+    .summary-info h2 {
+        font-size: 20px;
+    }
+
+    .summary-info .title-under-line::after {
+        width: 100px;
+    }
+
+    .summary-position {
+        font-size: 16px;
+    }
+
+    .info-wrapper {
+        position: relative;
+    }
+
+    .info-profile__languages {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 5px 0;
+    }
+
+    .info-profile__small-avatar {
+        margin-top: -75px;
+    }
+
+    .info-profile.col-2 {
+        position: static;
+        padding-bottom: 35px;
+    }
+
+    /* Portfolio*/
+    .portfolio-images__item {
+        width: 33.33%;
+    }
+
+    .portfolio-images__item--button-add {
+        height: 168px;
+    }
+}
+
+@media(max-width:480px) {
+    .portfolio-images__item--button-add {
+        height: 100px;
+    }
+}
+
+@media(max-width:400px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    .title-under-line, .title-top-line {
+        padding: 7px 0;
+    }
+
+    .title-top-line::before {
+        width: 50px;
+    }
+
+    .title-under-line::after {
+        width: 127px;
+    }
+
+    /* Summary Info */
+    .info-avatar {
+        max-height: 175px;
+    }
+
+    .summary-info {
+        top: 57px;
+    }
+    
+    .summary-info h2 {
+        font-size: 16px;
+    }
+
+    .summary-position {
+        font-size: 14px;
+    }
+    
+
+    .info-profile__small-avatar {
+        margin-top: -50px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-avatar .avatar-update i {
+        top: 23px;
+        left: 25px;
+        font-size: 12px;
+    }
+
+    .info-profile__small-avatar .avatar-update {
+        width: 100px;
+        font-size: 10px;
+        line-height: 23px;
+    }
+
+    .info-avatar .avatar-update {
+        width: 110px;
+        height: 110px;
+        bottom: -65px;
+        right: -65px;
+    }
+
+    .info-profile__personal-info {
+        padding: 0 15px;
+    }
+
+    .info-profile__personal-info__head {
+        margin-bottom: 5px;
+    }
+
+    /* Professional Summary */
+    .profession-summary-title {
+        margin-bottom: 5px;
+    }
+
+    .profession-summary-button-edit {
+        text-align: center;
+        padding-right: 0;
+        margin-top: 18px;
+    }
+
+    .profession-summary-wrapper {
+        padding: 35px 0;
+    }
+
+    /* Skill */
+    .skill-title {
+        margin-bottom: 12px;
+    }
+    
+    .skill-title__sub {
+        margin-top: 5px;
+    }
+
+    .skill-progress-circle {
+        padding: 0 20px;
+    }
+
+    .progress-circle-wrapper {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .skill-progress-circle__button-add {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .skill-progress-circle__button-add .btn {
+        margin-bottom: 0;
+    }
+
+    .skill-personal-wrapper .title-under-line::after {
+        width: 89px;
+    }
+
+    .skill-progress-bar {
+        padding: 0;
+    }
+
+    .skill-wrapper {
+        padding: 35px 0;
+    }
+
+    .skill-progress-bar__button-add {
+        text-align: center;
+    }
+
+    /* Education & Experience */
+    .work-education-wrapper {
+        padding: 35px 0;
+    }
+
+    .work-education-title__sub {
+        margin-top: 8px;
+    }
+
+    .work-education-case {
+        padding: 0 0 0 10px;
+        margin-top: 10px;
+    }
+
+    .work-education-case__box {
+        padding-left: 30px;
+    }
+
+    .work-education-case__box__item::after {
+        left: -31px;
+    }
+    .work-education-case__box__item::before {
+        width: 30px;
+        left: -30px;
+    }
+
+    .work-education-case__button-add {
+        text-align: center;
+    }
+
+    /* Portfolio */
+    .portfolio-wrapper {
+        padding: 35px 0;
+    }
+    
+    .portfolio-tags-list {
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .portfolio-images__item {
+        width: 50%;
+    }
+
+    .portfolio-images__item--button-add {
+        height: 120px;
+    }
+
+    /* References */
+    .references-wrapper {
+        padding: 35px 0;
+    }
+
+    .references-carousel__list__item__text i.first {
+        left: -11px;
+    }
+
+    .references-carousel__list__item__text span {
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    .references-wrapper .owl-theme .owl-dots {
+        margin-top: -10px;
+    }
+
+    .references--button-add {
+        margin-top: 12px;
+    }
+}
 /* ------ */

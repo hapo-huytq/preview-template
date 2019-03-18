@@ -8,7 +8,7 @@
 
 .progress-bar span {
     position: absolute;
-    top: -25px;
+    top: -33px;
 }
 
 .progress-bar span::after {
@@ -67,9 +67,9 @@
 
 @-webkit-keyframes widthload {
     0% {
-      opacity: 0;
-      width: 0; }
+        opacity: 0;
+        width: 0; }
     100% {
-      opacity: 1;
+        opacity: 1;
     } 
 }
