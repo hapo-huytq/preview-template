@@ -12,11 +12,6 @@
             }
         });
 
-        $(".portfolio-images").masonry({
-            // options
-            itemSelector: ".portfolio-images__item",
-        });
-
         /* Caculating distance of carousel nav button */
             var carouselWidth = $(".references-carousel").outerWidth();
             setPosition(carouselWidth);
