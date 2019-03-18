@@ -129,15 +129,29 @@
 
     .info-avatar img{
         width: 100%;
+        margin-top: -45px;
     }
 
     .info-avatar {
         max-height: 280px;
+        position: relative;
+    }
+
+    .info-avatar:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(51,51,51,0.25);
+        z-index: 1;
+        height: 100%;
+        width: 100%;
     }
 
     .summary-info {
         bottom: auto;
         top: 100px;
+        z-index: 2;
     }
 
     .summary-info h2 {
@@ -156,15 +170,21 @@
         position: relative;
     }
 
+    .info-avatar .avatar-update {
+        z-index: 2;
+    }
+    
     .info-profile__languages {
         position: absolute;
         top: 0;
         left: 0;
         margin: 5px 0;
+        z-index: 2;
     }
 
     .info-profile__small-avatar {
         margin-top: -75px;
+        z-index: 2;
     }
 
     .info-profile.col-2 {
@@ -173,8 +193,31 @@
     }
 
     /* Portfolio*/
-    .portfolio-projects__col-first, .portfolio-projects__col-second, .portfolio-projects__col-third, .portfolio-projects__col-fourth {
+    .portfolio-projects {
+        display: none;    
+    }
+
+    .portfolio-projects-mb {
+        display: flex;
+    }
+
+    .portfolio-projects-mb__col-first, 
+    .portfolio-projects-mb__col-second {
         width: 50%;
+    }
+
+    .portfolio-projects__item--button-add {
+        min-height: 109px;
+    }
+
+    .portfolio-wrapper .title-top-line::before, 
+    .references-wrapper .title-top-line::before {
+        width: 30px;
+    }
+
+    .portfolio-wrapper .title-under-line::after, 
+    .references-wrapper .title-under-line::after {
+        width: 55px;
     }
 }
 
@@ -306,6 +349,7 @@
     }
 
     /* Education & Experience */
+
     .work-education-wrapper {
         padding: 35px 0;
     }
@@ -344,33 +388,6 @@
         padding: 0;
         margin-bottom: 10px;
         margin-top: 0;
-    }
-    
-    .portfolio-projects__col-first .portfolio-projects__item,
-    .portfolio-projects__col-fourth .portfolio-projects__item   {
-        min-height: 109px;
-    }
-
-    /* Project second column */
-    .portfolio-projects__col-second .portfolio-projects__item:nth-child(n)  {
-        min-height: 218px;
-    }
-
-    .portfolio-projects__col-second .portfolio-projects__item:nth-child(2n)  {
-        min-height: 109px;
-    }
-
-    /* Project third column */
-    .portfolio-projects__col-third .portfolio-projects__item:nth-child(n)  {
-        min-height: 109px;
-    }
-
-    .portfolio-projects__col-third .portfolio-projects__item:nth-child(2n)  {
-        min-height: 218px;
-    }
-
-    .portfolio-projects__item img {
-        max-width: 88px;
     }
 
     /* References */

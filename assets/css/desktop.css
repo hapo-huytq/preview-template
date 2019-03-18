@@ -286,7 +286,7 @@ a {
 /* Professional Summary  */
 .profession-summary-wrapper {
     background: #2026B2;
-    padding: 47px 0 45px;
+    padding: 45px 0 45px;
 }
 
 .profession-summary-title {
@@ -307,7 +307,7 @@ a {
 /* Skill */
 .skill-wrapper {
     background: #4A0F73;
-    padding: 50px 0 20px;
+    padding: 45px 0 17px;
 }
 
 .skill-title {
@@ -483,7 +483,7 @@ a {
 /* Portolio */
 .portfolio-wrapper {
     background: #563D67;
-    padding: 46px 0;
+    padding: 45px 0;
 }
 
 .portfolio-wrapper .title-top-line::before,
@@ -532,80 +532,27 @@ a {
     width: 25%;
 }
 
-.portfolio-projects__col-first .portfolio-projects__item,
-.portfolio-projects__col-fourth .portfolio-projects__item   {
-    min-height: 200px;
-}
-
-/* Project first column */
-.portfolio-projects__col-first .portfolio-projects__item:nth-child(n) {
-    background: #FD7038;
-}
-
-.portfolio-projects__col-first .portfolio-projects__item:nth-child(2n) {
-    background: #333333;
-}
-
-.portfolio-projects__col-first .portfolio-projects__item:nth-child(3n+3) {
-    background: #F64C71;
-}
-
-/* Project second column */
-.portfolio-projects__col-second .portfolio-projects__item:nth-child(n)  {
-    min-height: 400px;
-    background: #EECD10;
-}
-
-.portfolio-projects__col-second .portfolio-projects__item:nth-child(2n)  {
-    min-height: 200px;
-    background: #333333;
-}
-
-/* Project third column */
-.portfolio-projects__col-third .portfolio-projects__item:nth-child(n)  {
-    min-height: 200px;
-    background: #2F2FA1;
-}
-
-.portfolio-projects__col-third .portfolio-projects__item:nth-child(2n)  {
-    min-height: 400px;
-    background: #EF5B5B;
-}
-
-/* Project fourth column */
-.portfolio-projects__col-fourth .portfolio-projects__item:nth-child(n) {
-    background: #F64C71;
-}
-
-.portfolio-projects__col-fourth .portfolio-projects__item:nth-child(2n) {
-    background: #F9BC2D;
-}
-
-.portfolio-projects__col-fourth .portfolio-projects__item:nth-child(3n+3) {
-    background: #333333;
-}
-
 .portfolio-projects__item {
     align-items: center;
     justify-content: center;
 }
 
-.portfolio-projects__item img {
-    max-width: 160px;
-}
-
 .portfolio-projects__item--button-add {
-    background: transparent !important;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio-projects-mb {
+    display: none;
 }
 /* ------ */
 
 /* Reference */
 .references-wrapper {
     background: #2F2FA1;
-    padding: 46px 0;
+    padding: 45px 0;
 }
 
 .references-carousel__list__item {
